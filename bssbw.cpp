@@ -72,6 +72,69 @@ int main(){
                 cout << "You have found a fruit! (you have " << fruit_total << " fruit)" << endl;
             }
         }
+        else if(command == "tinker"){
+            bool loopie_tinker = true;
+            while(loopie_tinker){
+                cout << "Say the variable and change it's requirements to zero" << endl;
+                cout << "\tWrite exit to exit" << endl;
+                cout << "\tWrite normalize to change the requirements back to normal" << endl;
+                cin >> command;
+
+                if(command == "better_tool"){
+                    better_tool_fruit = 0;
+                    better_tool_honey = 0;
+                    better_tool_unique_honey = 0;
+
+                    cout << "\nbetter tool, more like better CHEAP LOL\n" << endl;
+                }
+                else if(command == "win_badge"){
+                    win_badge_fruit = 0;
+                    win_badge_honey = 0;
+                    win_badge_unique_honey = 0;
+
+                    cout << "\nwin badge, more like CHEAP badge LOL\n" << endl;
+                }
+                else if(command == "normal_egg"){
+                    normal_egg_price = 0;
+
+                    cout << "\nnormal egg, more like instant ramen egg LOL\n" << endl;
+                }
+                else if(command == "normalize"){
+                    bool loopie_normalize = true;
+                    while(loopie_normalize){
+                        cout << "What do you want to change to normal?" << endl;
+                        cin >> command;
+
+                        if(command == "better_tool"){
+                            better_tool_fruit = 5;
+                            better_tool_honey = 1000;
+                            better_tool_unique_honey = 300;
+
+                            cout << "\nbetter tool, more like better INFLATION LOL\n" << endl;
+                        }
+                        else if(command == "normal_egg"){
+                            normal_egg_price = 5;
+
+                            cout << "\nnormal egg, more like 20$ instant ramen LOL\n" << endl;
+                        }
+                        else if(command == "win_badge"){
+                            win_badge_fruit = 8;
+                            win_badge_honey = 2500;
+                            win_badge_unique_honey = 500;
+
+                            cout << "\nwin badge, more like EXPENSIVE badge LOL\n" << endl;
+                        }
+                    }
+                }
+                else if(command == "exit"){
+                    cout << "\nFine, as you wish\n" << endl;
+                    loopie_tinker = false;
+                }
+                else{
+                    cout << "\ngurl, we don't have that variable for change" << endl;
+                }
+            }
+        }
         else if(command == "bee shop"){
             bool loopie_bee_shop = true;
             while(loopie_bee_shop){
