@@ -1,1 +1,1 @@
-Hey! This was a little project that I decided to do about a year ago, so I don't think this represents what I was able to do within this time period :D
+Hey! This was a little project that I decided to do about in March of 2024, so don't think this represents what I am able to do within this time period :D
